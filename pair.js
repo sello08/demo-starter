@@ -4,8 +4,8 @@
 //------------------------isme göre ilk bulunan productu getirme fonk 
 //------------------------unitprice < parametre getirme fonk (array) 
 //------------------------unitprice > parametre getirme fonk(array) 
-//indirimdeki ürünleri getirme //ürün ekleme 
-//verilen isim ile ürün silme 
+//------------------------indirimdeki ürünleri getirme //ürün ekleme 
+//------------------------verilen isim ile ürün silme 
 //tüm ürünleri getirme  
 
   let products = [  
@@ -82,13 +82,24 @@ function getByProductNameFirst(name){
 //-------------------------------------------------------------------------------------------------
     function getByDiscount() {
         products.forEach(product => {
-            if (product.discount == true) {
+            if (product.discount == "true") {
                 console.log(" discount " ,product)
             }
         })
     }
     
-    getByDiscount()
+    //getByDiscount()
+
+//-------------------------------------------------------------------------------------------------
+    function deleteProduct2(name) {
+        products.forEach(product => {
+            if (product.productName !== name) {
+                console.log("dasdsads",product)
+            }
+        })
+    }
+    
+    deleteProduct2("sütlü çikolata");
 
 
 //-------------------------------------------------------------------------------------------------
