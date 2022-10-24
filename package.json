@@ -2,8 +2,9 @@
   "name": "demo-starter",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node pair.js"
+    "start": "node tryYourself.js"
   },
   "keywords": [],
   "author": "",

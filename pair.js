@@ -43,14 +43,14 @@ function getByProductName(name){
 
 function getByProductNameFirst(name){
 
-    products.forEach(product => {
+    products.filter(product => {
         if(product.productName.includes(name)){
-            console.log(product[0])
+            console.log(product)
         }
     })
 }
 
-// getByProductNameFirst("bitter");
+ getByProductNameFirst("bitter");
 
 
 
@@ -99,7 +99,7 @@ function getByProductNameFirst(name){
         })
     }
     
-    deleteProduct2("sütlü çikolata");
+   // deleteProduct2("sütlü çikolata");
 
 
 //-------------------------------------------------------------------------------------------------
